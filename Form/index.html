@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hometask form</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<form>
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Value</th>
+			</tr>
+			<tr>
+				<td><label for="Name">Name</label></td>
+				<td><input type="text" id="intext" required></td>
+			</tr>
+			<tr>
+				<td><label for="sex">Sex</label></td>
+				<td>
+					<p><input type="radio" name="sex" required>Male</p>
+					<p><input type="radio" name="sex">Female</p>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="EyeColor">Eye color</label></td>
+				<td><select name="EyeColor" id="EyeColor">
+					<optgroup>
+						<option value="#">green</option>
+						<option value="#">blue</option>
+						<option value="#">brown</option>
+						<option value="#">grey</option>
+					</optgroup>
+					<optgroup>
+						<option value="#">amazing</option>
+						<option value="#">beatifull</option>
+						<option value="#">deepsea</option>
+						<option value="#">sparkling</option>
+					</optgroup>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="check">Check all that apply</label></td>
+				<td>
+					<p><input type="checkbox">Over 6 feet tall</p>
+					<p><input type="checkbox">Over 200 pounds</p>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<p>Describe your athletic ability</p>
+					<input type="textarea" id="ta" autocomplete="off">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" value="Enter my information" id="ib">
+				</td>
+			</tr>
+		</table>
+	</form>
+
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
