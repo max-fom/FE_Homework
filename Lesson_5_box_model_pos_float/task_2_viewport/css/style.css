@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    box-sizing: border-box;
+    width: 80%;
+    height: 100vh;
+    border-width: 0px 5px;
+    border-style: solid;
+    border-color: #f78432;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 15px;
+    background: #94ff56
+}
+    

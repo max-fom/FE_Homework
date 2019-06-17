@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container div{
+    margin-left: 10px;
+    width: 0px;
+    height: 0px;
+}
+
+.red_triangle-1{
+    border-bottom: 50px solid red;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+}
+
+.red_triangle-2{
+    border-top: 50px solid red;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+}
+
+.green_triangle-1{
+    border-left: 50px solid green;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+}
+
+.green_triangle-2{
+    border-right: 50px solid green;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+}
+
+.yellow_triangle-1{
+    border-bottom: 50px solid yellow;
+    border-right: 50px solid transparent;
+}
+
+.yellow_triangle-2{
+    border-bottom: 50px solid yellow;
+    border-left: 50px solid transparent;
+}
+
+.blue_triangle-1{
+    border-top: 50px solid blue;
+    border-right: 50px solid transparent;
+
+}
+
+.blue_triangle-2{
+    border-top: 50px solid blue;
+    border-left: 50px solid transparent;
+}

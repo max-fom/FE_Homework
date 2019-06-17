@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home task fruit-form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form action="#" name="Fruit" method="GET">
+
+        <h1 class="form-header">The World of Fruit</h1>
+        <h3>Fruit Survey</h3>
+        <div class="form-container">
+            <div class="left_side">
+                <div class="l_input">
+                    <label for="name">Name</label>
+                    <label for="address">Address</label>
+                    <label for="email">Email</label>
+                </div>
+                <div class="l_radio_fruit">
+                    <label for="radio_fruit">How many pieces of fruit do you eat per day?</label>
+                </div>
+                <div class="l_fav_fruit">
+                    <label for="fav-fruit">My favorite fruit</label>
+                </div>
+                <div class="l_brochure">
+                    <label for="brochure">Would you like a brochure?</label>
+                </div>
+            </div>
+
+            <div class="right_side">
+                <div class="r_input">
+                    <input type="text" id="name" required placeholder="Input your name">
+                    <input type="text" id="address" required placeholder="Input your address">
+                    <input type="email" id="email" required placeholder="Input you email">
+                </div>
+                <div class="r_radio_fruit">
+                    <p><input type="radio" id="radio_fruit_1" name="radio_fruit" required>0</p>
+                    <p><input type="radio" id="radio_fruit_2" name="radio_fruit">1</p>
+                    <p><input type="radio" id="radio_fruit_3" name="radio_fruit">2</p>
+                    <p><input type="radio" id="radio_fruit_4" name="radio_fruit">More than 2</p>
+                </div>
+                <select name="fav_fruit[]" id="fav_fruit" multiple required class="r_fav_fruit">
+                    <option value="">Apple</option>
+                    <option value="">Banana</option>
+                    <option value="">Plum</option>
+                    <option value="">Pomegranate</option>
+                    <option value="">Peach</option>
+                    <option value="">Pear</option>
+                    <option value="">Pineapple</option>
+                </select>
+                <div class="r_brochure">
+                    <input type="checkbox" name="brochure" id="brochure" required>
+                </div>
+                <div class="submit_btn">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

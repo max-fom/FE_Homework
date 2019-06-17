@@ -1,0 +1,14 @@
+ol{
+	text-decoration: none;
+	list-style-type: upper-roman;
+	font-size: 18px;
+}
+
+p{
+	font-weight: bold;
+	margin: 0;
+}
+
+ul{
+	list-style-type: disc;
+}

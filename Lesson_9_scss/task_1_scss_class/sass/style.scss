@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap');
+
+
+$basic_font: 'Roboto', sans-serif;
+$text-color: #8492af;
+
+@mixin box-size {
+    width: 360px;
+    height: 425px;
+    text-align: center;
+    box-shadow: -1px 4px 20px 3px rgba(168,156,168,1);
+}
+
+@mixin main-text-attr {
+    font-family: $basic_font;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+@mixin box_heading {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+    @include main-text-attr;
+}
+
+@mixin price-plan{
+    margin: 30px 0px 25px;
+    font-family: $basic-font;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+@mixin price-plan-month {
+    @include main-text-attr;
+    color: $text-color;
+}
+
+@mixin main_content{
+    font-family: $basic_font;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+//header stylization
+
+header{
+    font-family: $basic_font;
+    font-size: 60px;
+    font-weight: 100;
+        .heading{
+            width: 600px;
+            margin: 150px auto 0px;
+        }
+    
+}
+
+//main content positioning and stylization
+
+main{
+    justify-content: space-evenly;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+        .box{
+            @include box-size;
+                .box_heading{
+                    @include box_heading;
+                }
+        .price{
+            @include price-plan;
+                .per_month{
+                    @include price-plan-month;
+                }
+        }
+        .included{
+            @include main_content;
+            &::before{
+                content: url(/app/img/included.png)
+            }    
+        }
+        .not_included{
+            @include main_content;
+            &:before{
+                content: url(/app/img/not_included.png)
+            }
+        }
+    }
+}
+
+//footer info-section stylization
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        .footer-info{
+            margin-top: 105px;
+            width: 60%;
+            text-align: center;
+            color: $text-color;
+            @include main_content;
+        }
+        .btn{
+            margin-top: 70px;
+            font-family: $basic_font;
+            color: #fff;
+            width: 200px;
+            height: 50px;
+            background: #5584ff;
+            padding: 15px 60px;
+            border-radius: 40px;
+            border: none;
+            cursor: pointer;
+        }
+}

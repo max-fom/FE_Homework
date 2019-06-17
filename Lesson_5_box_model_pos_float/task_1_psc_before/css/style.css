@@ -1,0 +1,13 @@
+ul{
+    list-style-type: none;
+}
+
+li:before{
+    content: '\27A4';
+    color: darkviolet;
+    margin-right: 3px;
+}
+
+a{
+    text-decoration: none;
+}

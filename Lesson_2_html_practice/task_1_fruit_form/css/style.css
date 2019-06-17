@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    width: 600px;
+    margin: 20px auto 0px;
+    background: #f9ee6b;
+}
+
+/* main form container */
+
+.form-container{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+/* headings */
+
+h1, h3{
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.form-header{
+    background: #e2b316;
+    font-size: 22px;
+}
+
+/* left and right positioning sections */
+
+.left_side{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: right;
+}
+
+.right_side{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 15px;
+}
+
+/* email, address, and name section positioning */
+
+.l_input{
+    display: flex;
+    flex-direction: column;
+}
+
+.l_input label{
+    margin-top: 10px;
+}
+
+.r_input input{
+    margin-top: 8px;
+}
+
+/* radio buttons positioning */
+
+.r_radio_fruit{
+    margin-top: 10px;
+}
+
+.r_radio_fruit p{
+    margin: 0;
+}
+
+.l_radio_fruit{
+    margin-top: 10px;
+}
+
+/* favorite fruit selection positioning */
+
+.l_fav_fruit{
+    margin-top: 50px;
+}
+
+.r_fav_fruit{
+    margin-top: 5px;
+}
+
+/* brochure checkbox positioning */
+
+.l_brochure{
+    margin-top: 60px;
+    width: 70%;
+    align-self: flex-end;
+}
+
+.r_brochure{
+    margin-top: 8px;
+}
+
+/* submit button */
+
+.submit_btn{
+    margin-top: 30px;
+}
+
+.submit_btn input{
+    border-radius: 5px;
+}
