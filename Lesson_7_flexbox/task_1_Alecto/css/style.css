@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,400,700&display=swap");
+body {
+  margin: 0;
+  background: url(../img/Alecto_bg.jpg) center no-repeat;
+  background-size: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container_main {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  margin: 0px auto;
+  padding-top: 40vh;
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container img {
+  width: 35px;
+  height: 60px;
+}
+
+.box_info {
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: -40px;
+}
+
+.box_info .heading {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 100;
+}
+
+.box_info .heading .alecto {
+  font-weight: 700;
+}
+
+.box_info .sub-heading {
+  margin-top: 35px;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.box_info .btn {
+  margin-top: 65px;
+  align-self: center;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  font-weight: 700;
+  background: transparent;
+  padding: 15px 50px;
+  border: 3px solid #fff;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.bottom_arrow {
+  align-self: center;
+  margin-top: 30vh;
+}
