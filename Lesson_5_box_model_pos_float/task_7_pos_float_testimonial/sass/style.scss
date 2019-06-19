@@ -1,0 +1,71 @@
+@mixin quotes {
+    font-size: 40px;
+    position: absolute;
+    color: #979797;
+}
+
+@mixin signature {
+    float: right;
+    clear: both;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.heading{
+    width: 515px;
+    margin: 200px auto 0px;
+    position: relative;
+        .line{
+            background: url(/img/Separator.png);
+            height: 2px;
+
+        }
+        p{
+            text-transform: uppercase;
+            font-size: 13px;
+            color: #dd3c04;
+            text-align: center;
+            margin: -8px;
+            background: #fff;
+        }
+}
+
+.main{
+    width: 515px;
+    margin: 0 auto;
+    position: relative;
+        img{
+            float: left;
+        }
+        .info{
+            margin: 50px 0px 0px 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 15px;
+            line-height: 25px;
+            text-indent: 5%;
+            color: #313131;
+                &:before{
+                    content: '\201c';
+                    top: 10px;
+                    left: 110px;
+                    @include quotes;
+                }
+                &:after{
+                    content: '\201d';
+                    @include quotes;
+                    bottom: -10px;
+                }
+        }
+        .initials{
+            @include signature;
+            color: #577302;
+            font-size: 13px;
+        }
+        .post{
+            @include signature;
+            color: #5a5a5a;
+            font-size: 12px;
+        }
+}
+

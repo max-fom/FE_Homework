@@ -1,0 +1,53 @@
+body{
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.box{
+    height: 300px;
+    width: 300px;
+    background: #ccc;
+    position: relative;
+        .box_md{
+            height: 150px;
+            width: 150px;
+            background: #858c99;
+        }
+        .box_sm{
+            height: 75px;
+            width: 75px;
+            background: #5e6166;
+        }
+}
+
+// First box
+
+.box_rb{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+// Second box
+
+.box_lb{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+        .box_ilb{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+}
+
+// Third box
+
+.box_lt{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+

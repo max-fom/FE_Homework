@@ -1,0 +1,74 @@
+.heading {
+  width: 515px;
+  margin: 200px auto 0px;
+  position: relative;
+}
+
+.heading .line {
+  background: url(/img/Separator.png);
+  height: 2px;
+}
+
+.heading p {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #dd3c04;
+  text-align: center;
+  margin: -8px;
+  background: #fff;
+}
+
+.main {
+  width: 515px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main img {
+  float: left;
+}
+
+.main .info {
+  margin: 50px 0px 0px 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 25px;
+  text-indent: 5%;
+  color: #313131;
+}
+
+.main .info:before {
+  content: '\201c';
+  top: 10px;
+  left: 110px;
+  font-size: 40px;
+  position: absolute;
+  color: #979797;
+}
+
+.main .info:after {
+  content: '\201d';
+  font-size: 40px;
+  position: absolute;
+  color: #979797;
+  bottom: -10px;
+}
+
+.main .initials {
+  float: right;
+  clear: both;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #577302;
+  font-size: 13px;
+}
+
+.main .post {
+  float: right;
+  clear: both;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #5a5a5a;
+  font-size: 12px;
+}

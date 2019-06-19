@@ -1,0 +1,49 @@
+body {
+  margin: 30px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  background: #ccc;
+  position: relative;
+}
+
+.box .box_md {
+  height: 150px;
+  width: 150px;
+  background: #858c99;
+}
+
+.box .box_sm {
+  height: 75px;
+  width: 75px;
+  background: #5e6166;
+}
+
+.box_rb {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.box_lb {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.box_lb .box_ilb {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.box_lt {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
